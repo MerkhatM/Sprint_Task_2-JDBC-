@@ -9,13 +9,13 @@
 <html>
 <head>
     <title>Sign-in</title>
-    <%@include file="assets/bootstrap.jsp"%>
+    <%@include file="assets/bootstrap.jsp" %>
 </head>
 <body>
-<%@include file="assets/navbar.jsp"%>
+<%@include file="assets/navbar.jsp" %>
 <%
-    String error=request.getParameter("error");
-    if(error!=null){
+    String error = request.getParameter("error");
+    if (error != null) {
 %>
 <div class="alert alert-danger alert-dismissible fade show col-8 mx-auto d-flex justify-content-between" role="alert">
     <div>
@@ -29,7 +29,7 @@
     }
 %>
 <div class=" col-8 mx-auto shadow ">
-    <div class="col-12 bg-body-tertiary ps-2 mb-4" style="height: 50px" >
+    <div class="col-12 bg-body-tertiary ps-2 mb-4" style="height: 50px">
         <h2>Login Page</h2>
     </div>
     <form action="/login" method="post">
@@ -45,7 +45,7 @@
                 <input type="password" class="form-control" id="exampleInputPassword" name="password">
             </div>
         </div>
-        <button  type="submit" class="btn btn-success ms-2 mb-4">Login</button>
+        <button type="submit" class="btn btn-success ms-2 mb-4">Login</button>
     </form>
 </div>
 

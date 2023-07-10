@@ -15,7 +15,7 @@ public class ProfileServlet extends HttpServlet {
         System.out.println(user.getFullName());
         if (user != null) {
             request.setAttribute("user", user);
-            request.getRequestDispatcher("profile.jsp").forward(request,response);
+            request.getRequestDispatcher("profile.jsp").forward(request, response);
 
         }
 
